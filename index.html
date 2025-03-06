@@ -1,0 +1,1408 @@
+<!-- index.html -->
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>VANSH2K25</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png"> -->
+     <link rel="icon" href="img/vitlogo.png" type="image/png">
+    <!-- Place favicon.ico in the root directory -->
+     <!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/gijgo.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+    <!-- header-start -->
+    <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container">
+                    <div class="header_bottom_border">
+                        <div class="row align-items-center">
+                            <div class="col-xl-3 col-lg-3">
+                                <div class="logo">
+                                    <a href="index.html">
+                                        <img src="img/vanshbg.png" alt="404" width="150px" height="80px">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6">
+                                <div class="main-menu  d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li><a href="index.html">home</a></li>
+                                            <li><a href="performer.html">Performers</a></li>
+                                            
+                                            <li><a href="#">programs <i class="ti-angle-down"></i></a>
+                                                <ul class="submenu">
+                                                    <li><a href="Program.html">DAY-1</a></li>
+                                                    <li><a href="Program2.html">DAY-2</a></li>
+                                                    <!-- <li><a href="Venue.html">Venue</a></li>
+                                                    <li><a href="elements.html">elements</a></li> -->
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">blog <i class="ti-angle-down"></i></a>
+                                                <ul class="submenu">
+                                                    <li><a href="blog.html">blog</a></li>
+                                                    <li><a href="single-blog.html">single-blog</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                                <div class="buy_tkt">
+                                    <div class="book_btn d-none d-lg-block">
+                                        <a href="https://razorpay.me/@lakshman7389?amount=EPec5evqGoRk2C8icWNJlQ%3D%3D">Buy Tickets</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+
+    <!-- slider_area_start -->
+    <!-- slider_area_start -->
+<div class="slider_area">
+    <div class="single_slider d-flex align-items-center slider_bg_1 overlay">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-xl-12">
+                    <div class="slider_text text-center">
+                        <div class="shape_1 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                            <img src="img/shape/shape_1.svg" alt="">
+                        </div>
+                        <div class="shape_2 wow fadeInDown" data-wow-duration="1s" data-wow-delay=".2s">
+                            <img src="img/shape/shape_2.svg" alt="">
+                        </div>
+                        <span class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">20 & 21 March, 2025</span>
+                        <h3 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".4s">VANSH 2K25</h3>
+                        <p class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">VITS, Desmukhi.</p>
+                        
+                        
+                    </div>
+                </div>
+                <h3>
+                    <div id="countdown" class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s"></div>
+                </h3>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- slider_area_end -->
+
+<!-- Countdown Timer Styles -->
+<style>
+    #countdown {
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #ff00cc, #3333ff, #ff9900, #ff3300);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 20px 0;
+    margin-top: 50px;
+    letter-spacing: 3px;
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Ensures no unexpected overflow */
+    text-overflow: ellipsis; /* Adds "..." if content overflows (optional) */
+    width: 100%;
+    text-align: center; /* Centers the text */
+    max-width: 100vw; /* Ensures it doesn’t go beyond the screen width */
+}
+
+@media (max-width: 768px) {
+    #countdown {
+        font-size: 2.5rem; /* Adjust size for smaller screens */
+        letter-spacing: 2px; /* Fine-tune spacing */
+    }
+}
+
+@media (max-width: 480px) {
+    #countdown {
+        font-size: 2.5rem; /* Even smaller for mobile screens */
+        letter-spacing: 1px;
+    }
+}
+
+</style>
+
+<!-- Countdown Timer Script -->
+<script>
+    const eventDate = new Date('March 20, 2025 00:00:00').getTime();
+
+    const countdown = setInterval(() => {
+        const now = new Date().getTime();
+        const distance = eventDate - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById('countdown').innerHTML = 
+            `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+        if (distance < 0) {
+            clearInterval(countdown);
+            document.getElementById('countdown').innerHTML = "Event Started!";
+        }
+    }, 1000);
+</script>
+
+    <!-- slider_area_end -->
+
+    <!-- performar_area_start  -->
+    <div class="performar_area black_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section_title mb-80">
+                        <h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Our Guests.</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div  class="single_performer wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+                                <div data-tilt class="thumb">
+                                    <img src="img/performer/nagashwin.jpg" alt="VANSH2K25">
+                                </div>
+                                <div class="performer_heading">
+                                    <h4>NAG ASHWIN.</h4>
+                                    <span>Film Director</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div  class="single_performer wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                                <div data-tilt class="thumb">
+                                    <img src="img/performer/qmark.jpg" alt="VANSH2K25">
+                                </div>
+                                <div class="performer_heading">
+                                    <h4>TBD.</h4>
+                                    <span>Politician</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div  class="single_performer wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                                <div data-tilt class="thumb">
+                                    <img src="img/performer/qmark.jpg" alt="VANSH2K25">
+                                </div>
+                                <div class="performer_heading">
+                                    <h4>TBD.</h4>
+                                    <span>Movie Team</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div   class="single_performer wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
+                                <div data-tilt class="thumb">
+                                    <img src="img/performer/qmark.jpg" alt="VANSH2K25">
+                                </div>
+                                <div class="performer_heading">
+                                    <h4>TBD.</h4>
+                                    <span>Singer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- performar_area_end  -->
+
+    <!-- about_area_start  -->
+<div class="about_area black_bg">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="section_title text-center mb-80">
+                    <h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">About the Event</h3>
+                    <p class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">
+                        Join us in celebrating the Silver Jubilee of 
+                        <strong>Vignan Institute of Technology and Science</strong> — 
+                        a glorious milestone marking 25 years of academic excellence, innovation, and cultural vibrance. 
+                        As part of this grand celebration, experience the most awaited event of the year — 
+                        <span style="font-weight: bold; text-transform: uppercase; color: #d4af37;">Vansh 2025</span>, 
+                        a spectacular fusion of music, art, and entertainment.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-7 col-md-6">
+                <div class="about_thumb">
+                    <div class="shap_3 wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".4s">
+                        <img src="img/shape/shape_3.svg" alt="">
+                    </div>
+                    <div class="thumb_inner wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+                        <iframe src='https://my.spline.design/untitled-c1f24e5f4a1bb2706093630e82f77e38/' frameborder='0' width='100%' height='400px'></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-6">
+                <div class="about_info pl-68">
+                    <h4 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">
+                        Be a part of history — Silver Jubilee Celebration
+                    </h4>
+                    <p class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".6s">
+                        Witness the convergence of talent, culture, and technology as we celebrate 25 years of brilliance. 
+                        Vansh 2025 brings you electrifying performances, engaging activities, and unforgettable experiences.
+                    </p>
+                    <a href="https://razorpay.me/@lakshman7389?amount=EPec5evqGoRk2C8icWNJlQ%3D%3D" class="boxed-btn3 wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".7s">
+                        Book Your Tickets Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- about_area_end  -->
+
+<!-- Program Details -->
+<!-- program details -->
+<div class="program_details_area detials_bg_1 overlay2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section_title text-center mb-80  wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">
+                    <h3>Top Events.</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="program_detail_wrap">
+                    <div class="single_propram">
+                        <div class="inner_wrap">
+                            <div class="circle_img"></div>
+                            <div class="porgram_top">
+                                <span class=" wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">5.00-6.00pm</span>
+                                <h4 class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">20 March 2025</h4>
+                            </div>
+                            <div class="thumb wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                                <img src="img/performer/jammers_band.png" alt="">
+                            </div>
+                            <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">JAMMERS BAND.</h4>
+                        </div>
+                    </div>
+                    <div class="single_propram">
+                        <div class="inner_wrap">
+                            <div class="circle_img"></div>
+                            <div class="porgram_top">
+                                <span class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">6.00-7.00pm</span>
+                                <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">20 March 2025</h4>
+                            </div>
+                            <div class="thumb wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
+                                <img src="img/performer/anurag.jpg" alt="">
+                            </div>
+                            <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".6s">ANURAG KULKARNI</h4>
+                        </div>
+                    </div>
+                    <div class="single_propram">
+                        <div class="inner_wrap">
+                            <div class="circle_img"></div>
+                            <div class="porgram_top">
+                                <span class=" wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">7.00-8.00pm</span>
+                                <h4 class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">20 March 2025</h4>
+                            </div>
+                            <div class="thumb  wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                                <img src="img/performer/pk.png" alt="">
+                            </div>
+                            <h4 class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">PAVAN KALYAN</h4>
+                        </div>
+                    </div>
+                    <div class="single_propram">
+                        <div class="inner_wrap">
+                            <div class="circle_img"></div>
+                            <div class="porgram_top">
+                                <span class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">8.00-10.00pm</span>
+                                <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">20 March 2025</h4>
+                            </div>
+                            <div class="thumb wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
+                                <img src="img/performer/djp.jpg" alt="">
+                            </div>
+                            <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".6s">Dj PRITHVI SAI</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- program details end -->
+ <!-- Event List -->
+<div class="event_list_area details_bg_1 overlay2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section_title text-center mb-80 wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">
+                    <h3>Events List</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <!-- Navigation Tabs -->
+                <ul class="nav nav-tabs" id="eventTabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="literary-tab" data-toggle="tab" href="#literary" role="tab" aria-controls="literary" aria-selected="true">Literary Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="art-tab" data-toggle="tab" href="#art" role="tab" aria-controls="art" aria-selected="false">Art Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="cultural-tab" data-toggle="tab" href="#cultural" role="tab" aria-controls="cultural" aria-selected="false">Cultural Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="sports-tab" data-toggle="tab" href="#sports" role="tab" aria-controls="sports" aria-selected="false">Sports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="technical-tab" data-toggle="tab" href="#technical" role="tab" aria-controls="technical" aria-selected="false">Technical Events</a>
+                    </li>
+                </ul>
+
+                <!-- Tab Content -->
+                <div class="tab-content" id="eventTabsContent">
+                    <!-- Literary Events -->
+                    <div class="tab-pane fade show active" id="literary" role="tabpanel" aria-labelledby="literary-tab">
+                        <div class="event_detail_wrap">
+                            <div class="single_event">
+                                <h4>JAM</h4>
+                                <p><strong>Student Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <p><strong>Faculty Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <a href="#" class="register-btn">Register</a>
+                            </div>
+                            <div class="single_event">
+                                <h4>Creative Writing</h4>
+                                <p><strong>Student Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <p><strong>Faculty Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <a href="#" class="register-btn">Register</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Art Events -->
+                    <div class="tab-pane fade" id="art" role="tabpanel" aria-labelledby="art-tab">
+                        <div class="event_detail_wrap" style="max-height: 400px; overflow-y: auto;">
+                            <div class="single_event">
+                                <h4>Nail Art</h4>
+                                <p><strong>Student Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <p><strong>Faculty Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <a href="#" class="register-btn">Register</a>
+                            </div>
+                            <div class="single_event">
+                                <h4>Face Art</h4>
+                                <p><strong>Student Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <p><strong>Faculty Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <a href="#" class="register-btn">Register</a>
+                            </div>
+                            <div class="single_event">
+                                <h4>Mehandi</h4>
+                                <p><strong>Student Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <p><strong>Faculty Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p><a href="#" class="register-btn">Register</a>
+                            </div>
+                            <div class="single_event">
+                                <h4>Rangoli with Properties</h4>
+                                <p><strong>Student Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <p><strong>Faculty Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p><a href="#" class="register-btn">Register</a>
+                            </div>
+                            <div class="single_event">
+                                <h4>Quiz</h4>
+                                <p><strong>Student Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <p><strong>Faculty Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p><a href="#" class="register-btn">Register</a>
+                            </div>
+                            <div class="single_event">
+                                <h4>Video/Film Making (Social Consciousness)</h4>
+                                <p><strong>Student Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <p><strong>Faculty Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p><a href="#" class="register-btn">Register</a>
+                            </div>
+                            <div class="single_event">
+                                <h4>Graffiti Wall</h4>
+                                <p><strong>Student Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <p><strong>Faculty Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p><a href="#" class="register-btn">Register</a>
+                            </div>
+                            <div class="single_event">
+                                <h4>Art Exhibition</h4>
+                                <p><strong>Student Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <p><strong>Faculty Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p><a href="#" class="register-btn">Register</a>
+                            </div>
+                            <div class="single_event">
+                                <h4>Photo Expo (VITS Journey)</h4>
+                                <p><strong>Student Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <p><strong>Faculty Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p><a href="#" class="register-btn">Register</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cultural Events -->
+                    <div class="tab-pane fade" id="cultural" role="tabpanel" aria-labelledby="cultural-tab">
+                        <div class="event_detail_wrap" style="max-height: 400px; overflow-y: auto;">
+                            <div class="single_event">
+                                <h4>Singing (Solo)</h4>
+                                <p><strong>Student Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <p><strong>Faculty Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p><a href="#" class="register-btn">Register</a>
+                            </div>
+                            <div class="single_event">
+                                <h4>Singing (Group Folk Songs)</h4>
+                                <p><strong>Student Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <p><strong>Faculty Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p><a href="#" class="register-btn">Register</a>
+                            </div>
+                            <div class="single_event">
+                                <h4>Dance (Solo)</h4>
+                                <p><strong>Student Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <p><strong>Faculty Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p><a href="#" class="register-btn">Register</a>
+                            </div>
+                            <div class="single_event">
+                                <h4>Dance (Group)</h4>
+                                <p><strong>Student Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <p><strong>Faculty Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p><a href="#" class="register-btn">Register</a>
+                            </div>
+                            <div class="single_event">
+                                <h4>Skit/Drama (Group)</h4>
+                                <p><strong>Student Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <p><strong>Faculty Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p><a href="#" class="register-btn">Register</a>
+                            </div>
+                            <div class="single_event">
+                                <h4>Fancy Wear/Fashion Show (Main Stage)</h4>
+                                <p><strong>Student Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <p><strong>Faculty Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p><a href="#" class="register-btn">Register</a>
+                            </div>
+                            <div class="single_event">
+                                <h4>Cultural Cocktail</h4>
+                                <p><strong>Student Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <p><strong>Faculty Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p><a href="#" class="register-btn">Register</a>
+                            </div>
+                            <div class="single_event">
+                                <h4>Radio Jockey</h4>
+                                <p><strong>Student Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <p><strong>Faculty Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p><a href="#" class="register-btn">Register</a>
+                            </div>
+                            <div class="single_event">
+                                <h4>Rock Band</h4>
+                                <p><strong>Student Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <p><strong>Faculty Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <a href="#" class="register-btn">Register</a>
+                            </div>
+                            <div class="single_event">
+                                <h4>Stand-Up Comedy</h4>
+                                <p><strong>Student Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <p><strong>Faculty Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p><a href="#" class="register-btn">Register</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sports -->
+                    <div class="tab-pane fade" id="sports" role="tabpanel" aria-labelledby="sports-tab">
+                        <div class="event_detail_wrap" style="max-height: 400px; overflow-y: auto;">
+                            <div class="single_event">
+                                <h4>Cricket (Boys)</h4>
+                                <p><strong>Student Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <p><strong>Faculty Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p><a href="#" class="register-btn">Register</a>
+                            </div>
+                            <div class="single_event">
+                                <h4>Volley Ball (Boys)</h4>
+                                <p><strong>Student Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <p><strong>Faculty Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p><a href="#" class="register-btn">Register</a>
+                            </div>
+                            <div class="single_event">
+                                <h4>Throw Ball (Women)</h4>
+                                <p><strong>Student Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <p><strong>Faculty Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p><a href="#" class="register-btn">Register</a>
+                            </div>
+                            <div class="single_event">
+                                <h4>Badminton</h4>
+                                <p><strong>Student Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <p><strong>Faculty Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p><a href="#" class="register-btn">Register</a>
+                            </div>
+                            <div class="single_event">
+                                <h4>Athletics</h4>
+                                <p><strong>Events:</strong> Long Jump, Running – 200M, Running 400M, Shotput</p>
+                                <p><strong>Student Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <p><strong>Faculty Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p><a href="#" class="register-btn">Register</a>
+                            </div>
+                            <div class="single_event">
+                                <h4>Chess</h4>
+                                <p><strong>Student Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <p><strong>Faculty Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p><a href="#" class="register-btn">Register</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Technical Events -->
+                    <div class="tab-pane fade" id="technical" role="tabpanel" aria-labelledby="technical-tab">
+                        <div class="event_detail_wrap" style="max-height: 400px; overflow-y: auto;">
+                            <div class="single_event">
+                                <h4>Technical Paper Presentations</h4>
+                                <p><strong>Student Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <p><strong>Faculty Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p><a href="#" class="register-btn">Register</a>
+                            </div>
+                            <div class="single_event">
+                                <h4>Poster Presentation</h4>
+                                <p><strong>Student Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <p><strong>Faculty Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p><a href="#" class="register-btn">Register</a>
+                            </div>
+                            <div class="single_event">
+                                <h4>Hackathon</h4>
+                                <p><strong>Student Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <p><strong>Faculty Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p><a href="#" class="register-btn">Register</a>
+                            </div>
+                            <div class="single_event">
+                                <h4>Ideathon - Start-Up Pitch Day (Seed Funding for Best Ideas)</h4>
+                                <p><strong>Student Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <p><strong>Faculty Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p><a href="#" class="register-btn">Register</a>
+                            </div>
+                            <div class="single_event">
+                                <h4>Robotic/Drone Competition</h4>
+                                <p><strong>Student Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <p><strong>Faculty Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p><a href="#" class="register-btn">Register</a>
+                            </div>
+                            <div class="single_event">
+                                <h4>Hands-On Maker Station</h4>
+                                <p><strong>Student Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <p><strong>Faculty Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p><a href="#" class="register-btn">Register</a>
+                            </div>
+                            <div class="single_event">
+                                <h4>Showcase of Successful Alumni Start-Ups</h4>
+                                <p><strong>Student Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <p><strong>Faculty Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p><a href="#" class="register-btn">Register</a>
+                            </div>
+                            <div class="single_event">
+                                <h4>Mr./Ms. Coder</h4>
+                                <p><strong>Student Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <p><strong>Faculty Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p><a href="#" class="register-btn">Register</a>
+                            </div>
+                            <div class="single_event">
+                                <h4>Coding Relay</h4>
+                                <p><strong>Student Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <p><strong>Faculty Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p><a href="#" class="register-btn">Register</a>
+                            </div>
+                            <div class="single_event">
+                                <h4>CAD Designing Contest</h4>
+                                <p><strong>Student Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <p><strong>Faculty Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p><a href="#" class="register-btn">Register</a>
+                            </div>
+                            <div class="single_event">
+                                <h4>Mr./Ms. AI or AI Arena</h4>
+                                <p><strong>Student Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <p><strong>Faculty Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p><a href="#" class="register-btn">Register</a>
+                            </div>
+                            <div class="single_event">
+                                <h4>Online Gaming</h4>
+                                <p><strong>Student Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p>
+                                <p><strong>Faculty Coordinator:</strong> TBD</p>
+                                <p><strong>Department:</strong> TBD</p>
+                                <p><strong>Contact Number:</strong> TBD</p><a href="#" class="register-btn">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    /* Scrollable Content */
+.event_detail_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-height: 400px; /* Adjust as needed */
+    overflow-y: auto;
+    padding-right: 10px; /* For scrollbar spacing */
+}
+
+.single_event {
+    background-color: rgb(0, 0, 0);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    flex: 1 1 calc(33.333% - 20px);
+    margin-top: 10px;
+}
+
+.single_event:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.single_event h4 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+.single_event p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #bebebe;
+}
+/* Tabs Navigation */
+.nav-tabs {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #444; /* Darker border for visibility */
+}
+
+.nav-tabs .nav-link {
+    font-size: large;
+    border: none;
+    border-bottom: 2px solid transparent;
+    margin-right: 15px;
+    color: #ffffff; /* Light gray text for visibility */
+    transition: border-color 0.3s, color 0.3s;
+}
+
+.nav-tabs .nav-link:hover {
+    border-bottom: 2px solid #ff4400; /* Blue border on hover */
+    color: #fff; /* White text on hover */
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link.active:hover {
+    border-bottom: 3px solid #ff0000; /* Blue border when active */
+    color: #ffffff; /* Blue text when active */
+    background-color: rgba(255, 0, 0, 0.2); /* Slight background for active tab */
+}
+/* Register Button */
+.register-btn {
+        display: inline-block;
+        background-color: red;
+        color: white;
+        padding: 15px 40px;
+        /* padding-left: 20px; */
+        /* border-radius: 4px; */
+        text-decoration: none;
+        font-size: 1em;
+        font-weight: bolder;
+        transition: background-color 0.3s, color 0.3s, border 0.3s;
+        margin-top: 10px;
+    }
+
+    .register-btn:hover {
+        background-color: black;
+        color: red;
+        border: 1px solid red;
+    }
+</style>
+<!-- Event List End -->
+<!-- gallery -->
+<<div class="row justify-content-center">
+    <div class="section_title mb-80">
+        <h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Gallery</h3>
+    </div>
+</div>
+
+<div class="row no-gutters">
+    <div class="col-lg-3 col-md-3 col-sm-6">
+        <div class="gallery-box">
+            <div class="single-gallery">
+                <div class="gallery-img" style="background-image: url('img/performer/e1.jpg');"></div>
+                <div class="gallery-overlay">
+                    <h3>VANSH 2K23</h3>
+                    <!-- <p>Description of Event 1</p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6">
+        <div class="gallery-box">
+            <div class="single-gallery">
+                <div class="gallery-img" style="background-image: url('img/performer/e2.jpg');"></div>
+                <div class="gallery-overlay">
+                    <h3>TARANG 2K20</h3>
+                    <!-- <p>Description of Event 2</p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6">
+        <div class="gallery-box">
+            <div class="single-gallery">
+                <div class="gallery-img" style="background-image: url('img/performer/e3.jpg');"></div>
+                <div class="gallery-overlay">
+                    <h3>MAHOSTAV 2K29</h3>
+                    <!-- <p>Description of Event 3</p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6">
+        <div class="gallery-box">
+            <div class="single-gallery">
+                <div class="gallery-img" style="background-image: url('img/performer/e1.jpg');"></div>
+                <div class="gallery-overlay">
+                    <h3>VANSH  2K24</h3>
+                    <!-- <p>Description of Event 4</p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6">
+        <div class="gallery-box">
+            <div class="single-gallery">
+                <div class="gallery-img" style="background-image: url('img/performer/e2.jpg');"></div>
+                <div class="gallery-overlay">
+                    <h3>XYZ 2K28</h3>
+                    <!-- <p>Description of Event 5</p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6">
+        <div class="gallery-box">
+            <div class="single-gallery">
+                <div class="gallery-img" style="background-image: url('img/performer/e3.jpg');"></div>
+                <div class="gallery-overlay">
+                    <h3>Event 6</h3>
+                    <!-- <p>Description of Event 6</p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* General fade-in effect for gallery section */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h3 {
+    color: white;
+}
+
+.gallery-box {
+    position: relative;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animation for each gallery image */
+.single-gallery {
+    overflow: hidden;
+    border: 1px solid rgb(0, 0, 0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.single-gallery:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Image styling with zoom effect */
+.gallery-img {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 0.7;
+}
+
+.gallery-img:hover {
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+
+/* Overlay fade-in effect */
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    text-align: center;
+    padding: 20px;
+}
+
+.single-gallery:hover .gallery-overlay {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Title and description animations */
+.gallery-overlay h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.gallery-overlay p {
+    font-size: 1.2em;
+    margin: 0;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Staggered animation for each gallery box */
+.row.no-gutters .gallery-box {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.row.no-gutters .gallery-box:nth-child(1) { animation-delay: 0.2s; }
+.row.no-gutters .gallery-box:nth-child(2) { animation-delay: 0.4s; }
+.row.no-gutters .gallery-box:nth-child(3) { animation-delay: 0.6s; }
+.row.no-gutters .gallery-box:nth-child(4) { animation-delay: 0.8s; }
+.row.no-gutters .gallery-box:nth-child(5) { animation-delay: 1s; }
+.row.no-gutters .gallery-box:nth-child(6) { animation-delay: 1.2s; }
+
+
+</style>
+ <!-- gallery-end -->
+<!-- passes -->
+<div class="row justify-content-center">
+    <div class="section_title mb-80">
+        <h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Event Passes</h3>
+    </div>
+    </div>
+<div class="row justify-content-center">
+    <!-- Day 1 Pass -->
+    <div class="col-lg-4 col-md-8">
+        <div class="price-item">
+            <h4>Day 1 Pass</h4>
+            <div class="pi-price">
+                <h2><span>₹</span>500</h2>
+            </div>
+            <ul>
+                <li>Access to all Day 1 events</li>
+                <li>Lunch and refreshments</li>
+                <li>Networking opportunities</li>
+                <li>Special workshops</li>
+            </ul>
+            <a href="https://razorpay.me/@lakshman7389?amount=EPec5evqGoRk2C8icWNJlQ%3D%3D" class="price-btn">Get Ticket <span class="arrow_right"></span></a>
+        </div>
+    </div>
+
+    <!-- Day 2 Pass -->
+    <div class="col-lg-4 col-md-8">
+        <div class="price-item top-rated">
+            <div class="tr-tag">
+                <i class="fa fa-star"></i>
+            </div>
+            <h4>Full Event Pass</h4>
+            <div class="pi-price">
+                <h2><span>₹</span>600</h2>
+            </div>
+            <ul>
+                <li>Access to all Day 2 events</li>
+                <li>Lunch and refreshments</li>
+                <li>Networking opportunities</li>
+                <li>Special workshops</li>
+                <li>Exclusive Q&A sessions</li>
+            </ul>
+            <a href="https://razorpay.me/@lakshman7389?amount=EPec5evqGoRk2C8icWNJlQ%3D%3D" class="price-btn">Get Ticket <span class="arrow_right"></span></a>
+        </div>
+    </div>
+
+    <!-- Full Event Pass -->
+    <div class="col-lg-4 col-md-8">
+        <div class="price-item">
+            <h4>Vignan Women's Pass</h4>
+            <div class="pi-price">
+                <h2><span>₹</span>1000</h2>
+            </div>
+            <ul>
+                <li>Access to all events on both days</li>
+                <li>Lunch and refreshments</li>
+                <li>Networking opportunities</li>
+                <li>Special workshops</li>
+                <li>Exclusive Q&A sessions</li>
+                <li>VIP seating</li>
+            </ul>
+            <a href="https://razorpay.me/@lakshman7389?amount=EPec5evqGoRk2C8icWNJlQ%3D%3D" class="price-btn">Get Ticket <span class="arrow_right"></span></a>
+        </div>
+    </div>
+</div>
+<style>
+    /* General Styling for Price Items */
+.price-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%; /* Ensure all items have the same height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.price-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.price-item h4 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.pi-price {
+    margin-bottom: 20px;
+}
+
+.pi-price h2 {
+    font-size: 2em;
+    color: #e91e63;
+}
+
+.pi-price h2 span {
+    font-size: 1.2em;
+    vertical-align: top;
+}
+
+.price-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1; /* Allow the list to grow and take available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.price-item ul li {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.price-btn {
+    display: inline-block;
+    background-color: #e91e63;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    margin-top: auto; /* Push button to the bottom */
+}
+
+.price-btn:hover {
+    background-color: #1b2bd8;
+    color: yellow;
+}
+
+.price-btn .arrow_right {
+    display: inline-block;
+    margin-left: 5px;
+    transition: margin-left 0.3s;
+}
+
+.price-btn:hover .arrow_right {
+    margin-left: 10px;
+}
+
+/* Top Rated Tag */
+.top-rated .tr-tag {
+    position: absolute;
+    top: -15px;
+    right: 15px;
+    background-color: #e91e63;
+    color: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+}
+
+.top-rated .tr-tag i {
+    margin-top: 2px;
+}
+
+/* Ensure all columns are the same height */
+.row.justify-content-center {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row.justify-content-center .col-lg-4 {
+    flex: 1 1 calc(33.333% - 20px); /* Adjust based on your gutter */
+    margin: 10px;
+    min-height: 400px; /* Set a minimum height for uniformity */
+}
+
+</style>
+<!-- passes end -->
+<!-- map_area_start  -->
+    <div class="row justify-content-center">
+    <div class="section_title mb-80">
+        <h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Event Location</h3>
+    </div>
+    </div>
+    <div class="map-section">
+        <div class="map-container">
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.375316968344!2d78.7197673!3d17.345664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb0b34520e1c4f%3A0xdff09e04f19241ea!2sVignan%20Institute%20of%20Technology%20and%20Science!5e0!3m2!1sen!2sin!4v1684911879548!5m2!1sen!2sin"
+                width="100%"
+                height="500px"
+                padding="0"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+<!-- map_area_end  -->
+
+
+    <!-- brand_area_start  -->
+    <!-- brand_area_start  -->
+<div class="brand_area black_bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section_title text-center mb-80">
+                    <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Sponsor Logos</h4>
+                </div>
+            </div>
+        </div>
+        <div class="brand_wrap">
+            <div class="brand_slider">
+                <div class="single_brand text-center">
+                    <img src="img/brand/1.png" alt="Sponsor 1">
+                </div>
+                <div class="single_brand text-center">
+                    <img src="img/brand/2.png" alt="Sponsor 2">
+                </div>
+                <div class="single_brand text-center">
+                    <img src="img/brand/3.png" alt="Sponsor 3">
+                </div>
+                <div class="single_brand text-center">
+                    <img src="img/brand/4.png" alt="Sponsor 4">
+                </div>
+                <div class="single_brand text-center">
+                    <img src="img/brand/5.png" alt="Sponsor 5">
+                </div>
+                <div class="single_brand text-center">
+                    <img src="img/brand/1.png" alt="Sponsor 1">
+                </div>
+                <div class="single_brand text-center">
+                    <img src="img/brand/2.png" alt="Sponsor 2">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .brand_wrap {
+    overflow: hidden;
+    position: relative;
+}
+
+.brand_slider {
+    display: flex;
+    animation: scroll-left 20s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-50% - 20px)); /* Adjust based on the width of your items */
+    }
+}
+
+.single_brand {
+    min-width: 200px; /* Adjust based on your design */
+    margin-right: 20px; /* Space between logos */
+}
+
+.single_brand img {
+    max-width: 100%;
+    height: auto;
+}
+
+</style>
+
+    <!-- brand_area_end  -->
+    <!-- footer_start  -->
+    <footer class="footer">
+        <div class="footer_top">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-8">
+                        <div class="footer_widget">
+                            <div class="address_details text-center">
+                                <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">20-21st March, 2025</h4>
+                                <h3 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">VITS, Desmukhi</h3>
+                                <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">The event regularly attracts a diverse range of attendees from around the world.</p>
+                                <a href="https://razorpay.me/@lakshman7389?amount=EPec5evqGoRk2C8icWNJlQ%3D%3D" class="boxed-btn3 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">Buy Tickets</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-12 text-center">
+                <p>&copy; 2025 Vignan's Institute of Technology. All Rights Reserved.</p>
+            </div>
+        </div>
+    
+    </footer>
+    <!-- footer_end  -->
+
+    <!-- JS here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/scrollIt.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/gijgo.min.js"></script>
+    <script src="js/nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/tilt.jquery.js"></script>
+    <script src="js/plugins.js"></script>
+
+
+
+    <!--contact js-->
+    <script src="js/contact.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
